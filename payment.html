@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Assignment</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/registration.css">
+
+</head>
+<body>
+    <!-- fixed navigation bar -->
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Townsville Music School</a>
+    </div>
+    <div class="collapse navbar-collapse" id="b-menu-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="signup.html">Sign-up</a></li>
+            <li><a href="event.html">Events</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> <!-- /.nav-collapse -->
+  </div> <!-- /.container -->
+</div> <!-- /.navbar -->
+
+
+<div class="container">
+	<div class="row">
+	<!-- You can make it whatever width you want. I'm making it full width
+	on <= small devices and 4/12 page width on >= medium devices -->
+		<div class="col-xs-12 col-md-4">
+
+
+	<!-- CREDIT CARD FORM STARTS HERE -->
+			<div class="panel panel-default credit-card-box">
+				<div class="panel-heading display-table" >
+					<div class="row display-tr" >
+					<h3 class="panel-title display-td" >Payment Details</h3>
+					<div class="display-td" >                            
+						<img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+					</div>
+					</div>                    
+				</div>
+	<div class="panel-body">
+		<form role="form" id="payment-form">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+					<label for="cardNumber">CARD NUMBER</label>
+					<div class="input-group">
+		<input type="tel" class="form-control" name="cardNumber"placeholder="Valid Card Number"autocomplete="cc-number"required autofocus />
+		<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+		</div>
+		</div>                            
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-7 col-md-7">
+	<div class="form-group">
+	<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+	<input 
+	type="tel" 
+	class="form-control" 
+	name="cardExpiry"
+	placeholder="MM / YY"
+	autocomplete="cc-exp"
+	required 
+	/>
+	</div>
+	</div>
+	<div class="col-xs-5 col-md-5 pull-right">
+	<div class="form-group">
+	<label for="cardCVC">CV CODE</label>
+	<input type="tel" class="form-control"name="cardCVC"placeholder="CVC"autocomplete="cc-csc"required/>
+	</div>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-12">
+	<div class="form-group">
+	<label for="couponCode">COUPON CODE</label>
+	<input type="text" class="form-control" name="couponCode" />
+	</div>
+	</div>                        
+	</div>
+	<div class="row">
+	<div class="col-xs-12">
+	<button class="btn btn-success btn-lg btn-block" type="submit">Pay</button>
+	</div>
+	</div>
+	<div class="row" style="display:none;">
+	<div class="col-xs-12">
+	<p class="payment-errors"></p>
+	</div>
+	</div>
+	</form>
+	</div>
+	</div>            
+	<!-- CREDIT CARD FORM ENDS HERE -->
+
+
+	</div>            
+
+
+
+	</div>
+	</div>
+
+	<!-- If you're using Stripe for payments -->
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Contact Us</h5>
+          <ul style="list-style: none;display: block;">
+            <li>Ph-07 4724 2086</li>
+            <li>Mobile-0402 255 182</li>
+            <li>Mobile-0421 072 625</li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="www.facebook.com" class="facebook">
+                <img src="icon/facebookicon.ico" width="40px" height="40px">
+              </a>
+              
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="www.google.com">
+                  <img src="icon/gicon.png" width="40px" height="40px">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#">Team 17</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+	
+</body>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+</body>
+</html>
